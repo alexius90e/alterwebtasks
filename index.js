@@ -1,12 +1,6 @@
-const createButton = document.getElementById('create');
-
 const field = document.querySelector('.field');
 
 const fieldItems = generateFieldItems();
-
-const colorInput = document.getElementById('colorInput');
-
-createButton.addEventListener('click', createField);
 
 function generateFieldItems() {
   const styles = [
@@ -34,3 +28,31 @@ function createField() {
   field.innerHTML = null;
   field.append(...fieldItems);
 }
+
+const createFieldButton = document.getElementById('createField');
+createFieldButton.addEventListener('click', createField);
+
+const addFilterButton = document.getElementById('addFilter');
+const colorInput = document.getElementById('colorInput');
+const filterItems = document.querySelector('.filter__items');
+let filters = [];
+
+addFilterButton.addEventListener('click', addFilter);
+
+function addFilter() {
+  if (colorInput.value === '') return;
+  const filterItem = document.createElement('div');
+  filterItem.className = 'filter__item';
+  filterItem.textContent = colorInput.value;
+  colorInput.value = null;
+  filterItems.append(filterItem);
+}
+
+filterItems.addEventListener('click', (event) => {
+  const target = event.target;
+  if (!target.classList.contains('filter__item')) return;
+  target.classList.toggle('filter__item_active');
+  filters = Array.from(document.querySelectorAll('.filter__item_active')).map(
+    (item) => item.textContent
+  );
+});

@@ -11,6 +11,22 @@
   height: 5rem;
 }
 
+.filter__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter__item {
+  padding: 0.5rem 1rem;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.filter__item_active {
+  background-color: rgb(255, 229, 97);
+}
+
 .red {
   background-color: red;
 }

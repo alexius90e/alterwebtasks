@@ -41,6 +41,7 @@ addFilterButton.addEventListener('click', addFilter);
 
 function addFilter() {
   if (colorInput.value === '') return;
+
   const filterItem = document.createElement('div');
   filterItem.className = 'filter__item';
   filterItem.textContent = colorInput.value;
@@ -48,11 +49,15 @@ function addFilter() {
   filterItems.append(filterItem);
 }
 
-filterItems.addEventListener('click', (event) => {
-  const target = event.target;
-  if (!target.classList.contains('filter__item')) return;
-  target.classList.toggle('filter__item_active');
-  filters = Array.from(document.querySelectorAll('.filter__item_active')).map(
-    (item) => item.textContent
-  );
-});
+filterItems.addEventListener('click', handleFilterItemClick);
+
+function handleFilterItemClick(event) {
+  if (!event.target.classList.contains('filter__item')) return;
+  event.target.classList.toggle('filter__item_active');
+
+  const filterElements = document.querySelectorAll('.filter__item_active');
+  filters = Array.from(filterElements).map((item) => item.textContent);
+  console.log(filters);
+}
+
+function filterFieldItems() {}

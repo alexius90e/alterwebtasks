@@ -6,3 +6,22 @@ html {
 body {
   margin: 0;
 }
+
+h2 {
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: center;
+  color: #26497e;
+
+  @media (max-width: 1200px) {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+  }
+}

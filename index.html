@@ -10,24 +10,22 @@
   <body>
     <h1>Task 2-2</h1>
     <p><button id="createField">Создать</button></p>
-    <div class="field"></div>
+    <main id="app">
+      <div class="field"></div>
 
-    <h2>Filter</h2>
-    <div class="filter__items">
-      <div class="filter__item">red</div>
-      <div class="filter__item">green</div>
-      <div class="filter__item">blue</div>
-    </div>
-    <p>
-      <label>Color: <input type="text" id="colorInput" /></label>
-      <button id="addFilter">Создать фильтр</button>
-    </p>
+      <h2>Filter</h2>
+      <div class="filter__items"></div>
+      <p>
+        <label>Color: <input type="text" id="colorInput" /></label>
+        <button id="addFilter">Создать фильтр</button>
+      </p>
 
-    <h2>Logic</h2>
-    <div>
-      <label>Или<input type="radio" name="orXor" id="or" checked /></label>
-      <label>Кроме<input type="radio" name="orXor" id="xor" /></label>
-    </div>
+      <h2>Logic</h2>
+      <div>
+        <label>Или<input type="radio" name="orXor" id="or" checked /></label>
+        <label>Кроме<input type="radio" name="orXor" id="xor" /></label>
+      </div>
+    </main>
 
     <script src="./index.js" defer></script>
   </body>

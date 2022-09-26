@@ -78,6 +78,13 @@ function filterFieldItems() {
   field.append(...filteredItems);
 }
 
+function handleFieldClick(event) {
+  const isFieldItem = event.target.classList.contains('field__item');
+  colorInput.value = isFieldItem ? event.target.dataset.color : null;
+}
+
+field.addEventListener('click', handleFieldClick);
+
 createFieldButton.addEventListener('click', filterFieldItems);
 
 addFilterButton.addEventListener('click', handleAddFilterClick);

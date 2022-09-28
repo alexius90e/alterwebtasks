@@ -7,6 +7,7 @@ new Swiper(`${baseClass}swiper`, {
     delay: 5000,
   },
   loop: true,
+  spaceBetween: 50,
   navigation: {
     nextEl: `${baseClass}navigation-next`,
     prevEl: `${baseClass}navigation-prev`,

@@ -4,10 +4,18 @@ html {
 }
 
 body {
-  margin: 0;
+  position: relative;
+  margin: 2.875rem 0 0;
+  background: #f9f9f9;
+
+  @media (max-width: 1200px) {
+    margin: 2rem 0 0;
+  }
+
+  @media (max-width: 768px) {
+    margin: 1.375rem 0 0;
+  }
 }
-
-
 
 h2 {
   font-size: 3.5rem;

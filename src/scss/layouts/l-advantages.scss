@@ -1,8 +1,15 @@
+@import '../variables.scss';
+
 .advantages {
-  padding: 3.375rem 7.5rem;
+  padding: $paddingAbout-y-xl $padding-x-xl $paddingAbout-y-xl / 2;
+  background-color: $bg-primary;
 
   @media (max-width: 1200px) {
-    padding: 2.625rem;
+    padding: $paddingAbout-y-m $padding-x-m $paddingAbout-y-m / 2;
+  }
+
+  @media (max-width: 768px) {
+    padding: $paddingAbout-y-s $padding-x-s $paddingAbout-y-s / 2;
   }
 
   &__heading {

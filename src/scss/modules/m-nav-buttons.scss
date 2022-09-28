@@ -1,0 +1,21 @@
+.prev-button,
+.next-button {
+  padding: 1rem;
+  border: none;
+  background-color: rgba($color: #ffffff, $alpha: 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &.swiper-button-disabled {
+    opacity: 0.2;
+  }
+}
+
+.prev-button {
+  background-image: url('/src/assets/arrow-prev.svg');
+}
+
+.next-button {
+  background-image: url('/src/assets/arrow-next.svg');
+}

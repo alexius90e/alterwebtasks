@@ -1,0 +1,32 @@
+.primary-button {
+  padding: 1.75rem 6rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 70px;
+  background: linear-gradient(180deg, #ff7144 0%, #fdce26 100%);
+  box-shadow: 0px 4px 30px #fc9e4a;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 4px 10px #fc9e4a;
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #fdce26 0%, #ff7144 100%);
+  }
+
+  @media (max-width: 1024px) {
+    padding: 1.375rem 4.125rem;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.125rem 3.125rem;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}

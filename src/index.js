@@ -7,3 +7,4 @@ import './js/header';
 import './js/main';
 import './js/partners';
 import './js/instagram';
+import './js/modal';

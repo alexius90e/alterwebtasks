@@ -1,0 +1,64 @@
+@import '../variables.scss';
+
+.instagram {
+  padding: 4.75rem $padding-x-xl 5.625rem;
+  
+  background-image: url('/src/assets/instagram/instagram-bg.svg');
+  background-repeat: no-repeat;
+  background-position-x: 110%;
+  background-position-y: 3rem;
+  background-color: $bg-secondary;
+
+  @media (max-width: 1200px) {
+    padding: 5.625rem $padding-x-m 6.375rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3.75rem $padding-x-s;
+    background-position-x: 170%;
+  }
+
+  &__heading {
+    margin: 0 0 2.75rem;
+
+    @media (max-width: 768px) {
+      margin: 0 0 2.25rem;
+    }
+  }
+
+  &__swiper {
+    margin-bottom: 2rem;
+  }
+
+  &__slide {
+    display: flex;
+    gap: 1.5rem;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & > img {
+      max-width: calc(33.3% - 1rem);
+      border-radius: 0.625rem;
+
+      @media (max-width: 1200px) {
+        max-width: 28rem;
+        width: 100%;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  & > .primary-button {
+    display: block;
+    margin: 0 auto;
+  }
+}

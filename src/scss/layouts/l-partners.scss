@@ -37,11 +37,13 @@
 
     & > img {
       max-width: 30%;
+      max-height: 7rem;
       height: 100%;
       width: auto;
 
       @media (max-width: 768px) {
         max-width: 100%;
+        max-height: 6rem;
         height: auto;
       }
     }

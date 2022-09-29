@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="app">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./logo.svg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+          <a class="header__nav-link" href="#about">О нас </a>
+          <a class="header__nav-link" href="#advantages">Наши преимущества</a>
+          <a class="header__nav-link" href="#instagram">Мы в Instagram</a>
+          <a class="header__nav-link" href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="header__phone">
+          <a href="tel: +375291234567">+ 375 29 123 45 67</a>
+        </div>
+        <button class="header__burger"></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="first-screen">
+        <div class="swiper first-screen__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide first-screen__slide">
+              <div class="first-screen__slide-info">
+                <h2 class="first-screen__slide-heading">
+                  Учебники и книги <br />для школьников
+                </h2>
+                <p class="first-screen__slide-description">
+                  Здесь должен быть пояснительный текст Можно про издательство,
+                  мжно написать цену “от”..
+                </p>
+              </div>
+              <figure class="first-screen__slide-image">
+                <img src="./slide1.png" alt="slide1" />
+              </figure>
+              <button class="primary-button join">Присоединиться</button>
+            </div>
+
+            <div class="swiper-slide first-screen__slide">
+              <div class="first-screen__slide-info">
+                <h2 class="first-screen__slide-heading">
+                  Учебные пособия для учителей и школ
+                </h2>
+                <p class="first-screen__slide-description">
+                  Здесь должен быть пояснительный текст Можно про издательство,
+                  мжно написать цену “от”..
+                </p>
+              </div>
+              <figure class="first-screen__slide-image">
+                <img src="./slide2.png" alt="slide2" />
+              </figure>
+              <button class="primary-button join">Присоединиться</button>
+            </div>
+
+            <div class="swiper-slide first-screen__slide">
+              <div class="first-screen__slide-info">
+                <h2 class="first-screen__slide-heading">
+                  Литература для педагогов и воспитателей детсадов
+                </h2>
+                <p class="first-screen__slide-description">
+                  Здесь должен быть пояснительный текст Можно про издательство,
+                  мжно написать цену “от”..
+                </p>
+              </div>
+              <figure class="first-screen__slide-image">
+                <img src="./slide3.png" alt="slide3" />
+              </figure>
+              <button class="primary-button join">Присоединиться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="first-screen__navigation">
+          <button class="first-screen__navigation-prev prev-button"></button>
+          <div
+            class="first-screen__pagination pagination swiper-pagination"
+          ></div>
+          <button class="first-screen__navigation-next next-button"></button>
+        </div>
+      </section>
+
+      <section class="advantages" id="advantages">
+        <h3 class="advantages__heading">Почему покупатели выбирают нас</h3>
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon_top"></div>
+            <p class="advantages__text">
+              Входим в топ 10 образовательных магазинов
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon_books"></div>
+            <p class="advantages__text">
+              В наличии более 1000 экземпляров книг
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon_service"></div>
+            <p class="advantages__text">Имеет свой бесплатный онлайн-сервис</p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon_partners"></div>
+            <p class="advantages__text">
+              Работаем с издательствами Беларуси и России
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h3 class="about__heading">О магазине</h3>
+        <p class="about__text">
+          «Светоч» - это небольшой магазин, но мы, его создатели, поставили
+          перед собой серьезную задачу. Мы хотим, чтобы здесь было пространство
+          для встреч Книги и Ребенка. Это место, переступив порог которого,
+          каждый родитель превращается в друга, помощника, советчика. Мы
+          собираем только лучшую литературу для детей от 0 до 14 лет. И, конечно
+          же, мы знаем, что дети всегда там, где сладкое, потому готовим
+          полезные угощения, которые придутся по вкусу нашим маленьким
+          посетителям. На наших полках можно найти развивающие игрушки, наборы
+          для творчества, «взрослую» литературу о детях и другие полезные
+          вещицы. Мы будем рады помочь вам с любыми рекомендациями и
+          поучаствовать в формировании вашей домашней библиотеки.
+          <br />
+          <br />
+          <b>С нетерпением ждем вас в гости!</b>
+        </p>
+        <div class="about__image">
+          <img src="./about.png" alt="" />
+        </div>
+      </section>
+
+      <section class="instagram">
+        <h3 class="instagram__heading">Мы в Instagram</h3>
+
+        <div class="instagram__navigation">
+          <button class="instagram__navigation-prev prev-button"></button>
+          <button class="instagram__navigation-next next-button"></button>
+        </div>
+
+        <div class="swiper instagram__swiper">
+          <div class="swiper-wrapper instagram__wrapper">
+            <div class="swiper-slide instagram__slide">
+              <img src="./instagram-1.jpg" alt="partner" />
+              <img src="./instagram-2.jpg" alt="partner" />
+              <img src="./instagram-3.jpg" alt="partner" />
+            </div>
+
+            <div class="swiper-slide instagram__slide">
+              <img src="./instagram-1.jpg" alt="partner" />
+              <img src="./instagram-2.jpg" alt="partner" />
+              <img src="./instagram-3.jpg" alt="partner" />
+            </div>
+          </div>
+        </div>
+
+        <button class="primary-button">Перейти в инстаграм</button>
+      </section>
+
+      <section class="partners">
+        <h3 class="partners__heading">Наши партнеры</h3>
+
+        <div class="swiper partners__swiper">
+          <div class="swiper-wrapper partners__wrapper">
+            <div class="swiper-slide partners__slide">
+              <img src="./partner-1.png" alt="partner" />
+              <img src="./partner-2.png" alt="partner" />
+              <img src="./partner-3.png" alt="partner" />
+            </div>
+            <div class="swiper-slide partners__slide">
+              <img src="./partner-4.png" alt="partner" />
+              <img src="./partner-5.png" alt="partner" />
+              <img src="./partner-6.png" alt="partner" />
+            </div>
+            <div class="swiper-slide partners__slide">
+              <img src="./partner-7.png" alt="partner" />
+              <img src="./partner-8.png" alt="partner" />
+              <img src="./partner-9.png" alt="partner" />
+            </div>
+          </div>
+        </div>
+
+        <div class="partners__navigation">
+          <button class="partners__navigation-prev prev-button"></button>
+
+          <div class="partners__pagination pagination swiper-pagination"></div>
+
+          <button class="partners__navigation-next next-button"></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h3 class="footer__heading">Контакты</h3>
+      <div class="footer__contacts">
+        <ul class="footer__phones">
+          <li><a href="tel:8-(0222)-77-98-60">8-(0222)-77-98-60</a></li>
+          <li><a href="tel:8-(0222)-77-98-90">8-(0222)-77-98-90</a></li>
+        </ul>
+        <div class="footer__address">г. Могилёв ул. Королёва, д. 37</div>
+        <ul class="footer__worktime">
+          <li>09:00-19:00 Пн-Пт</li>
+          <li>09:00-16:00 Сб-Вс</li>
+        </ul>
+        <div class="footer__email">
+          <a href="mailto:svetoch92@mail.ru">svetoch92@mail.ru</a>
+        </div>
+        <div class="footer__copyrigth">© 2016 ОДО "Светоч" г. Могилев</div>
+      </div>
+      <div class="footer__map">
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.by/maps/org/svetoch/1052624701/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Светоч</a
+          ><iframe
+            src="https://yandex.by/map-widget/v1/-/CCUZAUC5pB"
+            width="100%"
+            height="500"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+
+    <div class="overlay">
+      <div class="modal">
+        <h3>Спасибо!</h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut lab"Lorem ipsum dolor sit amet,
+        </p>
+        <form class="modal__form">
+          <input
+            class="modal__input"
+            type="tel"
+            placeholder="Телефон"
+            pattern="^[0-9\-\+]{9,15}$"
+          />
+          <input class="primary-button send" type="submit" value="Отправить" />
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+.header {
+  position: sticky;
+  top: -0.125rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-bottom: 2.25rem;
+  background: #f9f9f9;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 7.5rem;
+    background: #f9f9f9;
+
+    @media (max-width: 1200px) {
+      padding: 0.5rem 2.625rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  & a {
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    text-decoration: none;
+    color: #343434;
+
+    @media (max-width: 1200px) {
+      font-size: 0.875rem;
+      line-height: 1rem;
+    }
+  }
+
+  &__logo {
+    order: 0;
+
+    & > img {
+      width: 4.75rem;
+      height: auto;
+
+      @media (max-width: 1200px) {
+        width: 3rem;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    gap: 3rem;
+    order: 1;
+
+    @media (max-width: 1200px) {
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 5.125rem;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      background-color: #ffffff;
+      box-shadow: 0px 0.125rem 0.25rem rgba(189, 129, 129, 0.25);
+    }
+  }
+
+  &__phone {
+    order: 2;
+    padding-left: 2.5rem;
+    background: url('/src/assets/ic_sharp-call.svg') no-repeat left center;
+    background-size: 1.875rem;
+
+    @media (max-width: 1200px) {
+      padding-left: 1.5rem;
+      background-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__burger {
+    display: none;
+    order: 3;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    background: url('/src//assets/burger.svg') no-repeat center;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}

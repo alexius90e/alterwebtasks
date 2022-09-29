@@ -1,0 +1,46 @@
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 2.875rem 0 0;
+  background: #f9f9f9;
+
+  @media (max-width: 1200px) {
+    margin: 2rem 0 0;
+  }
+
+  @media (max-width: 768px) {
+    margin: 1.375rem 0 0;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 4.125rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 3.625rem;
+  text-align: center;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #26497e;
+
+  @media (max-width: 1200px) {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+  }
+}

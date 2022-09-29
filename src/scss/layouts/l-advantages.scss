@@ -1,0 +1,77 @@
+@import '../variables.scss';
+
+.advantages {
+  padding: $paddingAbout-y-xl $padding-x-xl $paddingAbout-y-xl / 2;
+  background-color: $bg-primary;
+
+  @media (max-width: 1200px) {
+    padding: $paddingAbout-y-m $padding-x-m $paddingAbout-y-m / 2;
+  }
+
+  @media (max-width: 768px) {
+    padding: $paddingAbout-y-s $padding-x-s $paddingAbout-y-s / 2;
+  }
+
+  &__heading {
+    margin-bottom: 6.25rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 4.25rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 5.5rem;
+    }
+  }
+
+  &__item {
+    @media (max-width: 1024px) {
+      flex: 1 0 calc(50% - 1rem);
+    }
+  }
+
+  &__icon {
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &_top {
+      background-image: url('/src/assets/advantages/advantage-1.svg');
+    }
+
+    &_books {
+      background-image: url('/src/assets/advantages/advantage-2.svg');
+    }
+
+    &_service {
+      background-image: url('/src/assets/advantages/advantage-3.svg');
+    }
+
+    &_partners {
+      background-image: url('/src/assets/advantages/advantage-4.svg');
+    }
+  }
+
+  &__text {
+    margin: 2.25rem 0 0;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      margin: 1rem 0 0;
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
+    }
+  }
+}
